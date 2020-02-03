@@ -11,21 +11,29 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+from . import settings_secret
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'a%*7(oj@=l24t#j$n8zs&+px#v4w2c*#-r6g&t@@q%qij(sv-k'
+SECRET_KEY = settings_secret.SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['35.165.55.226']
+PRODUCTION = settings_secret.PRODUCTION
+if PRODUCTION:
+    ALLOWED_HOSTS = ['*']
+    SITE_URL = 'http://www.chanduchiranjeevi.com'
+    DEBUG = False
+else:
+    ALLOWED_HOSTS = ['*']
+    SITE_URL = 'http://localhost:8000'
+    DEBUG = True
 
 
 # Application definition
@@ -37,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'chanduchiranjeevi',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +63,7 @@ ROOT_URLCONF = 'portfolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -62,6 +71,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'chanduchiranjeevi.context_processors.add_variable_to_context',
             ],
         },
     },
@@ -69,21 +79,19 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'portfolio.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'portfolio',
-        'USER': 'db_user',
-        'PASSWORD': 'db_password',
-        'HOST': 'localhost',
-        'PORT': '',              # Set to empty string for default.
+        'ENGINE': settings_secret.ENGINE,
+        'NAME': settings_secret.NAME,
+        'USER': settings_secret.USER,
+        'PASSWORD': settings_secret.PASSWORD,
+        'HOST': settings_secret.HOST,
+        'PORT': settings_secret.PORT,  # Set to empty string for default.
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
@@ -103,7 +111,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
@@ -117,9 +124,21 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles/'), ]
+
+# Email configuration
+EMAIL_HOST = settings_secret.EMAIL_HOST
+EMAIL_HOST_USER = settings_secret.EMAIL_HOST_USER
+EMAIL_HOST_PASSWORD = settings_secret.EMAIL_HOST_PASSWORD
+EMAIL_PORT = settings_secret.EMAIL_PORT
+EMAIL_USE_TLS = settings_secret.EMAIL_USE_TLS
+
+
+# BG_STYLE = None
+# BG_STYLE = 'plain'
+# BG_STYLE = 'blur'
+BG_STYLE = 'pics'

@@ -1,0 +1,2 @@
+Name: {{name}} -- Email: {{email}} -- Mobile: {{mobile}} -- Subject: {{subject}} -- message: {{message}} \n
+To mark this message as read click here : {{site_url}}/contact/{{contact_id}}/read/

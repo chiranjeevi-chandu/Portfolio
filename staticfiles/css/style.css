@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.v-header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.fullscreen-video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fullscreen-video-wrap video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.header-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    z-index: 1;
+    opacity: 0.85;
+}
+
+.header-content {
+    z-index: 2;
+}
+
+.header-content h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+}
+
+.header-content p {
+    font-size: 1.8rem;
+    display: block;
+    padding-bottom: 2rem;
+}
+
+/*@media (max-width: 991px) {
+    .container {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+}*/
+
+/*
+======================================================================================================================================================
+                                                                           Navbar
+======================================================================================================================================================
+ */
+
+.navbar {
+    position: static;
+}
+
+#nav {
+    font-size: 1.5rem;
+}
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+}
+
+/*
+======================================================================================================================================================
+                                                                           Section
+======================================================================================================================================================
+ */
+
+/*Minumum height*/
+section {
+    min-height: calc(100vh - 52px);
+    min-height: -o-calc(100vh - 52px); /* opera */
+    min-height: -webkit-calc(100vh - 52px); /* google, safari */
+    min-height: -moz-calc(100vh - 52px); /* firefox */
+    padding-top: 5vh;
+}
+
+/*
+======================================================================================================================================================
+                                                                           Skills
+======================================================================================================================================================
+ */
+
+.progress {
+    height: 35px;
+
+}
+
+.progress .skill {
+    font: normal 12px "Open Sans Web";
+    line-height: 35px;
+    padding: 0;
+    margin: 0 0 0 20px;
+    /* text-transform: uppercase; */
+}
+
+.progress .skill .val {
+    float: right;
+    font-style: normal;
+    margin: 0 20px 0 0;
+}
+
+.progress-bar {
+    text-align: left;
+    transition-duration: 3s;
+}
+
+/*
+======================================================================================================================================================
+                                                                           Contact Me
+======================================================================================================================================================
+ */
+
+#contact-form {
+    padding-bottom: 40px;
+    font-size: 1.5rem;
+}
+
+.contact-submit {
+    margin-right: 18px;
+}
+
+#contact-help-text {
+    font-size: 1.5rem;
+}
+
+/*
+======================================================================================================================================================
+                                                                           Footer
+======================================================================================================================================================
+ */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+footer.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    min-height: 100px;
+    background-color: #f5f5f5;
+}
+
+/* Social */
+
+.social a {
+    position: relative;
+    display: inline-block;
+    min-width: 40px;
+    padding: 10px 0px;
+    margin: 0px 5px;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgb(215, 215, 215);
+    border-radius: 40px;
+}
+
+.social a.social-icon {
+    text-decoration: none !important;
+    box-shadow: 0px 0px 1px rgb(51, 51, 51);
+    box-shadow: 0px 0px 1px rgba(51, 51, 51, 0.7);
+}
+
+.social a.social-icon:hover {
+    color: rgb(255, 255, 255) !important;
+}
+
+.social a.facebook {
+    color: rgb(59, 90, 154) !important;
+}
+
+.social a.facebook:hover {
+    background-color: rgb(59, 90, 154) !important;
+}
+
+.social a.twitter {
+    color: rgb(45, 168, 225) !important;
+}
+
+.social a.twitter:hover {
+    background-color: rgb(45, 168, 225) !important;
+}
+
+.social a.github {
+    color: rgb(51, 51, 51) !important;
+}
+
+.social a.github:hover {
+    background-color: rgb(51, 51, 51) !important;
+}
+
+.social a.google-plus {
+    color: rgb(244, 94, 75) !important;
+}
+
+.social a.google-plus:hover {
+    background-color: rgb(244, 94, 75) !important;
+}
+
+.social a.linkedin {
+    color: rgb(1, 116, 179) !important;
+}
+
+.social a.linkedin:hover {
+    background-color: rgb(1, 116, 179) !important;
+}
+
+.social a.skype {
+    color: rgb(18, 165, 244) !important;
+}
+
+.social a.skype:hover {
+    background-color: rgb(18, 165, 244) !important;
+}
+
+.footer-row {
+    margin: 30px 0;
+}
+
+.footer-copyright {
+    text-decoration: none;
+    margin-top: 10px;
+}

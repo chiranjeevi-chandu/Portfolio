@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style type="text/css">
+        .tg {
+            border-collapse: collapse;
+            border-spacing: 0;
+            margin: 0px auto;
+        }
+
+        .tg td {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            padding: 10px 5px;
+            border-style: solid;
+            border-width: 1px;
+            overflow: hidden;
+            word-break: normal;
+            border-color: black;
+        }
+
+        .tg th {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            padding: 10px 5px;
+            border-style: solid;
+            border-width: 1px;
+            overflow: hidden;
+            word-break: normal;
+            border-color: black;
+        }
+
+        .tg .tg-ok42 {
+            font-weight: bold;
+            background-color: #34ff34;
+            color: #013300;
+            border-color: #036400;
+            text-align: center;
+            vertical-align: top
+        }
+
+        @media screen and (max-width: 767px) {
+            .tg {
+                width: auto !important;
+            }
+
+            .tg col {
+                width: auto !important;
+            }
+
+            .tg-wrap {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                margin: auto 0px;
+            }
+        }</style>
+</head>
+<body>
+<div class="tg-wrap">
+    <table class="tg">
+        <tr>
+            <td class="tg-ok42">Name</td>
+            <td class="tg-ok42">{{ name }}</td>
+        </tr>
+        <tr>
+            <td class="tg-ok42">Email</td>
+            <td class="tg-ok42">{{ email }}</td>
+        </tr>
+        <tr>
+            <td class="tg-ok42">Mobile</td>
+            <td class="tg-ok42">{{ mobile }}</td>
+        </tr>
+        <tr>
+            <td class="tg-ok42">Subject</td>
+            <td class="tg-ok42">{{ subject }}</td>
+        </tr>
+        <tr>
+            <td class="tg-ok42">Message</td>
+            <td class="tg-ok42">{{ message }}</td>
+        </tr>
+    </table>
+</div>
+To mark this message as read click <a href="{{site_url}}/contact/{{contact_id}}/read/">here</a>
+</body>
+</html>
+

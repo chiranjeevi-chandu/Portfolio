@@ -1,0 +1,694 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {% load static %}
+    {% include "snippets/meta.html" %}
+    <link rel="icon" sizes="16x16 32x32 64x64" href="{% static '/favicon.ico' %}">
+    <title>Chiranjeevi Chandu</title>
+    {% include "snippets/css.html" %}
+    <script src="{% static "/js/pace.min.js" %}"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="55">
+
+<header class="v-header container" id="home">
+    <div class="fullscreen-video-wrap">
+        <video poster="{% static "images/console.jpg" %}" autoplay loop muted>
+            <source src="{% static "videos/code_extraopt.mp4" %}" type="video/mp4">
+            <source src="{% static "videos/code.webm" %}" type="video/webm">
+        </video>
+    </div>
+    <div class="header-overlay"></div>
+    <div class="header-content text-center">
+        <h1>LOOKING FOR A DEVELOPER?</h1>
+        <p>I enjoy being challenged and engaging with projects that require me to work outside my comfort and knowledge set, as continuing to learn new languages and development techniques are important to me and the success of the organization I work for.</p>
+        <a class="anchor" href="#skills">
+            <img src="{% static "images/icon-scroll.gif" %}" alt="" width="70px">
+        </a>
+    </div>
+</header>
+
+<!--------------------------Navbar start -------------------------->
+
+<div id="nav">
+    <nav class="navbar navbar-default navbar-static">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand anchor" href="#home">Chiranjeevi Chandu</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar" data-toggle="collapse" data-target=".navbar-collapse.in">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a class="anchor" href="#home">Home</a></li>
+                    <li><a class="anchor" href="#skills">Skills</a></li>
+                    <li><a class="anchor" href="#experience">Experience</a></li>
+                    <li><a class="anchor" href="#education">Education</a></li>
+                    <li><a class="anchor" href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!--------------------------Skills section start -------------------------->
+
+<section id="skills">
+    <div class="container-fluid">
+        <div class="bg-transparent">
+            <div class="text-center">
+                <h2>Skills</h2>
+            </div>
+            <div class="container">
+                <hr>
+            </div>
+            <div class="container text-center">
+                <div class="h4 scale">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-4 col-xs-6">Scale:</div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">2 - Limited,</div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">4 - Borderline,</div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">6 - Adequate,</div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">8 - Strong,</div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">10 - Exceptional</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <br>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="progress skill-bar ">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                                 aria-valuenow="80" aria-valuemin="0"
+                                 aria-valuemax="80">
+                                <span class="skill">Java<i class="val">8</i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="progress skill-bar ">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                                 aria-valuenow="80" aria-valuemin="0"
+                                 aria-valuemax="80">
+                                <span class="skill">C<i class="val">8</i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="progress skill-bar ">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                                 aria-valuenow="80" aria-valuemin="0"
+                                 aria-valuemax="80">
+                                <span class="skill">HTML<i class="val">8</i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="progress skill-bar ">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                                 aria-valuenow="80" aria-valuemin="0"
+                                 aria-valuemax="80">
+                                <span class="skill">CSS<i class="val">8</i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="progress skill-bar ">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                                 aria-valuenow="70" aria-valuemin="0"
+                                 aria-valuemax="70">
+                                <span class="skill">C++<i class="val">7</i></span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-4 col-sm-6">
+                        <div class="progress skill-bar ">
+                            <div class="progress-bar progress-bar-primary progress-bar-striped active" role="progressbar"
+                                 aria-valuenow="70" aria-valuemin="0"
+                                 aria-valuemax="70">
+                                <span class="skill">Java EE<i class="val">7</i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="progress skill-bar ">
+                            <div class="progress-bar progress-bar-primary progress-bar-striped active" role="progressbar"
+                                 aria-valuenow="70" aria-valuemin="0"
+                                 aria-valuemax="70">
+                                <span class="skill">Spring<i class="val">7</i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="progress skill-bar ">
+                            <div class="progress-bar progress-bar-primary progress-bar-striped active" role="progressbar"
+                                 aria-valuenow="70" aria-valuemin="0"
+                                 aria-valuemax="70">
+                                <span class="skill">Hibernate<i class="val">7</i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="progress skill-bar ">
+                            <div class="progress-bar progress-bar-primary progress-bar-striped active" role="progressbar"
+                                 aria-valuenow="70" aria-valuemin="0"
+                                 aria-valuemax="70">
+                                <span class="skill">Django<i class="val">7</i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="progress skill-bar ">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                                 aria-valuenow="60" aria-valuemin="0"
+                                 aria-valuemax="60">
+                                <span class="skill">Python<i class="val">6</i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="progress skill-bar ">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                                 aria-valuenow="60" aria-valuemin="0"
+                                 aria-valuemax="60">
+                                <span class="skill">SQL<i class="val">6</i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="progress skill-bar ">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                                 aria-valuenow="60" aria-valuemin="0"
+                                 aria-valuemax="60">
+                                <span class="skill">JavaScript<i class="val">6</i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="progress skill-bar ">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                                 aria-valuenow="60" aria-valuemin="0"
+                                 aria-valuemax="60">
+                                <span class="skill">JQuery<i class="val">6</i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="progress skill-bar ">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                                 aria-valuenow="60" aria-valuemin="0"
+                                 aria-valuemax="60">
+                                <span class="skill">BootStrap<i class="val">6</i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="progress skill-bar ">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                                 aria-valuenow="60" aria-valuemin="0"
+                                 aria-valuemax="60">
+                                <span class="skill">JUnit<i class="val">6</i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="progress skill-bar ">
+                            <div class="progress-bar progress-bar-primary progress-bar-striped active" role="progressbar"
+                                 aria-valuenow="60" aria-valuemin="0"
+                                 aria-valuemax="60">
+                                <span class="skill">AngularJS<i class="val">6</i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="progress skill-bar ">
+                            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+                                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="60">
+                                <span class="skill">Dropwizard<i class="val">6</i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="progress skill-bar ">
+                            <div class="progress-bar progress-bar-primary progress-bar-striped active" role="progressbar"
+                                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="60">
+                                <span class="skill">Apache<i class="val">6</i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="progress skill-bar ">
+                            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+                                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="60">
+                                <span class="skill">Maven<i class="val">6</i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="progress skill-bar ">
+                            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+                                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="60">
+                                <span class="skill">MATLAB<i class="val">6</i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="progress skill-bar ">
+                            <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar"
+                                 aria-valuenow="40" aria-valuemin="0" aria-valuemax="40">
+                                <span class="skill">PHP<i class="val">4</i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="progress skill-bar ">
+                            <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar"
+                                 aria-valuenow="40" aria-valuemin="0" aria-valuemax="40">
+                                <span class="skill">BASH<i class="val">4</i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="progress skill-bar ">
+                            <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar"
+                                 aria-valuenow="40" aria-valuemin="0" aria-valuemax="40">
+                                <span class="skill">ML & AI<i class="val">4</i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {#        <img src="{% static "images/under_dev.gif" %}" alt="content_loading" class="img-responsive">#}
+            </div>
+        </div>
+    </div>
+</section>
+<!--------------------------Skills section end -------------------------->
+<!--------------------------Experiences section start -------------------------->
+
+<section id="experience">
+    <div class="container-fluid">
+        <div class="bg-transparent">
+
+            <div class="text-center">
+                <h2>Experience</h2>
+            </div>
+            <div class="container">
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <!--First Card Start-->
+                    <div class="col-md-3">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="{% static "images/experience/Ericsson_image.PNG" %}"/>
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="{% static "images/experience/Ericsson_img.PNG" %}"/>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Baseband Develope 4G/5G</h3>
+                                            <p class="profession">Ericsson AB</p>
+                                            <p class="text-center">Lund, Sweden</p>
+                                        </div>
+                                        <div class="footer">
+                                            <i class="fa fa-calendar"></i> 01/2018 - Present
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <h5 class="motto">Objective: Developer</h5>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4 class="text-center">Job Description</h4>
+                                            <p class="text-center">My role involves working with 4G and 5G in Downlink Physical Layer (DLPHY).</p>
+                                            <p class="text-center">My role is to develop baseband software for 4G/5G (NR) using <strong>C</strong>, <strong>C++</strong>.</p>
+                                            <p class="text-center">My role also involves coding in <strong>Java</strong> for continuous integration and <strong>nodal testing</strong> and scripting in <strong>Python</strong>, <strong>Perl</strong> to automate the test environment.</p>
+                                            <p class="text-center">I was also involved in the development and testing of radios and baseband. To build STPs required for performance verification of radios</p>
+                                            <p class="text-center">I was involved in <strong>Baseband Performance Verification</strong> and hardware testing.</p>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <a href="https://www.facebook.com/wearesinch/" class="facebook" target="_blank"><i
+                                                    class="fa fa-facebook fa-fw"></i></a>
+                                            <a href="https://www.sinch.com/" class="website" target="_blank"><i class="fa fa-globe"></i></a>
+                                            <a href="https://twitter.com/wearesinch" class="twitter" target="_blank"><i
+                                                    class="fa fa-twitter fa-fw"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end back panel -->
+                            </div>
+                            <!-- end card -->
+                        </div>
+                    </div>
+                    <!--First Card End-->
+                    <!--Second Card Start-->
+                    <div class="col-md-3">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="{% static "images/experience/OPR_up.jpg" %}"/>
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="{% static "images/experience/OPR.png" %}"/>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Backend Developer</h3>
+                                            <p class="profession">One Planet Rating</p>
+                                            <p class="text-center">Stockholm, Sweden</p>
+                                        </div>
+                                        <div class="footer">
+                                            <i class="fa fa-calendar"></i> 06/2017 - 12/2017
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <h5 class="motto">Objective: Sustainable Tourism</h5>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4 class="text-center">Job Description</h4>
+                                            <p class="text-center">My role involves working with front end technologies like <strong>HTML</strong>,
+                                                <strong>CSS</strong>,
+                                                <strong>JavaScript</strong>, <strong>jQuery</strong>, <strong>Bootstrap</strong>.</p>
+                                            <p class="text-center">I was also involved in the <strong>development</strong> of <strong>backend</strong>
+                                                in
+                                                <strong>Python</strong> with <strong>Django</strong> framework. Tools such as Slack and Git are also
+                                                used.
+                                            </p>
+                                            <p class="text-center">I was involved in <strong>continuous deployment</strong> on <strong>AWS</strong>.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <a href="https://www.facebook.com/oneplanetrating/" class="facebook" target="_blank"><i
+                                                    class="fa fa-facebook fa-fw"></i></a>
+                                            <a href="https://www.oneplanetrating.org/" class="website" target="_blank"><i class="fa fa-globe"></i></a>
+                                            <a href="https://twitter.com/oneplanetrating" class="twitter" target="_blank"><i
+                                                    class="fa fa-twitter fa-fw"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end back panel -->
+                            </div>
+                            <!-- end card -->
+                        </div>
+                    </div>
+                    <!--Second Card End-->
+                    <!--Fourth Card Start-->
+                    <div class="col-md-3">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="{% static "images/experience/Softhouse_up.jpg" %}"/>
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="{% static "images/experience/softhouse.png" %}"/>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Software Craftsmanship</h3>
+                                            <p class="profession">Softhouse AB</p>
+                                            <p class="text-center">Karlskrona, Sweden</p>
+                                        </div>
+                                        <div class="footer">
+                                            <i class="fa fa-calendar"></i> 08/2016 – 12/2016
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <h5 class="motto">Objective: Online Exams</h5>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4 class="text-center">Job Description</h4>
+                                            <p class="text-center">The project to create and give web-based multiple-choice questions exams with Role
+                                                based
+                                                accesses.</p>
+                                            <p class="text-center">I was involved in development of frontend in <strong>HTML</strong>,
+                                                <strong>CSS</strong>,
+                                                <strong>JS</strong>, <strong>jQuery</strong>, <strong>Bootstrap</strong>, <strong>AngularJS</strong>.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <a href="https://www.facebook.com/softhouseconsulting/" class="facebook" target="_blank"><i
+                                                    class="fa fa-facebook fa-fw"></i></a>
+                                            <a href="http://www.softhouse.se/" class="website" target="_blank"><i class="fa fa-globe"></i></a>
+                                            <a href="https://twitter.com/softhousesh/" class="twitter" target="_blank"><i
+                                                    class="fa fa-twitter fa-fw"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end back panel -->
+                            </div>
+                            <!-- end card -->
+                        </div>
+                    </div>
+                    <!--Fourth Card End-->
+                 <!--Third Card Start-->
+                    <div class="col-md-3">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="{% static "images/experience/NIIT_up.jpg" %}"/>
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="{% static "images/experience/NIIT.png" %}"/>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">C++ Certification</h3>
+                                            <p class="profession">NIIT Technologies Pvt Ltd.,</p>
+                                            <p class="text-center">Hyderabad, India</p>
+                                        </div>
+                                        <div class="footer">
+                                            <i class="fa fa-calendar"></i> 08/2014 – 11/2014
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <h5 class="motto">Objective: Object Oriented Programming</h5>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4 class="text-center">Job Description</h4>
+                                            <p class="text-center">I have completed Object Oriented Programming using <strong>C++</strong>
+                                                which is equivalent to 4 credit course in US.
+                                            </p>
+                                            <p class="text-center">I was also involved in learning the <strong>development</strong> of <strong>backend</strong>
+                                                using Object Oriented Programming using <strong>C++</strong> with concepts like, <strong>Abstraction</strong>,
+                                                <strong>Encapsulation</strong>, <strong>Inheritance</strong>  and <strong>Polymorphism</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <a href="https://www.facebook.com/NIIT4u/" class="facebook" target="_blank"><i
+                                                    class="fa fa-facebook fa-fw"></i></a>
+                                            <a href="http://www.niit.com/india/training/" class="website" target="_blank"><i class="fa fa-globe"></i></a>
+                                            <a href="https://twitter.com/NIITLtd/" class="twitter" target="_blank"><i class="fa fa-twitter fa-fw"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end back panel -->
+                            </div>
+                            <!-- end card -->
+                        </div>
+                    </div>
+                    <!--Third Card End-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--------------------------Experiences section end -------------------------->
+<!--------------------------Education section start -------------------------->
+
+<section id="education">
+    <div class="container-fluid">
+        <div class="bg-transparent">
+
+            <div class="text-center">
+                <h2>Education</h2>
+            </div>
+            <div class="container">
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="[ col-sm-6 col-md-offset-2 col-md-4 ]">
+                        <div class="[ info-card ]">
+                            <img style="width: 100%; background-color: white" src="{% static "images/education/BTH.png" %}"/>
+                            <div class="[ info-card-details ] animate">
+                                <div class="[ info-card-header ]">
+                                    <h1>Master of Science </h1>
+                                    <h3>Radio Communications </h3>
+                                </div>
+                                <div class="[ info-card-detail ]">
+                                    <hr>
+                                    <p>
+                                        Wireless Communications, Digital Signal Processing, Adaptive Signal Processing,
+                                        Digital Transmission and Radio Communication, Antenna Systems, Multi-Dimensional Signal Processing,
+                                        Neural Networks, Advanced Radio Communications, Research Methodology.
+                                    </p>
+                                    <hr>
+                                    <h3>Blekinge Institute of Technology</h3>
+                                    <p class="text-muted">01/2015 – 02/2017</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="[ col-sm-6 col-md-4 ]">
+                        <div class="[ info-card ]">
+                            <img style="width: 100%; background-color: white;" src="{% static "images/education/JNTU_HYD.jpg" %}"/>
+                            <div class="[ info-card-details ] animate">
+                                <div class="[ info-card-header ]">
+                                    <h1>Bachelor of Technology</h1>
+                                    <h3>Electronics & Communication</h3>
+                                </div>
+                                <div class="[ info-card-detail ]">
+                                    <hr>
+                                    <p>
+                                        C, Signals and Systems, Electronic Devices and Circuits, Network Analysis, Electronic Circuit Analysis,
+                                        Electromagnetic Waves and Transmission Lines, Analog Communications, Digital Communications, Linear & Digital
+                                        IC Applications, Microprocessors and Microcontrollers, Computer Networks, Digital Signal Processing, Cellular &
+                                        Mobile Communications, Wireless Communications.
+                                    </p>
+                                    <hr>
+                                    <h3>JNTUHCEH</h3>
+                                    <p class="text-muted">06/2011 – 12/2014</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--------------------------Education section end -------------------------->
+<!--------------------------Contact section start -------------------------->
+
+<section id="contact">
+    <div class="container-fluid">
+        <div class="bg-transparent">
+            <div class="text-center">
+                <h1 class="message"></h1>
+                <h2>Contact Me</h2>
+                <p id="contact-help-text">Please let me know what you think</p>
+            </div>
+            <hr>
+            <div class="container-fluid">
+                <div class="col-md-8 col-md-offset-2">
+                    <form action="" id="contact-form" method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name">Name*</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="What should I call you?">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="email">Email*</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="I will get in touch here!">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="mobile">Mobile</label>
+                                    <input type="text" class="form-control" id="mobile" name="mobile" placeholder="You prefer calling (Optional)?">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="subject">Subject*</label>
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject helps me organize!">
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label for="message">Message*</label>
+                                    <textarea class="form-control" id="message" name="message" placeholder="You message is valued." rows="8"></textarea>
+                                </div>
+                            </div>
+                            {% csrf_token %}
+                            <div class="contact-submit text-right">
+                                <button type="submit" class="btn btn-success">Submit Form</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--------------------------Contact section end -------------------------->
+<!--------------------------Footer section end -------------------------->
+
+<footer class="footer">
+    <div class="container">
+        <div class="text-center">
+            <div class="row footer-row">
+                <div class="col-md-6">
+                    <p class="text-muted footer-copyright">Copyright Chandu Chiranjeevi 2020 &copy; made with <a
+                            href="https://www.djangoproject.com/">django</a></p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social ">
+                        <a href="https://github.com/chanduchiranjeevi"
+                           class="[ social-icon github ] animate" target="_blank"><span class="fa fa-github-alt"></span></a>
+
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=chiruchandu4541@gmail.com"
+                           class="[ social-icon google-plus ] animate" target="_blank"><span class="fa fa-at"></span></a>
+
+                        <a href="https://www.linkedin.com/in/chanduchiranjeevi/"
+                           class="[ social-icon linkedin ] animate" target="_blank"><span class="fa fa-linkedin"></span></a>
+
+                        <a href="skype:live:.cid.c774fd9aad7d81f1?chat"
+                           class="[ social-icon skype ] animate" target="_blank"><span class="fa fa-skype"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--------------------------Footer section end -------------------------->
+
+
+{% include "snippets/js.html" %}
+{% include "snippets/modal.html" %}
+{% include "snippets/markup.html" %}
+</body>
+</html>
