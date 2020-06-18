@@ -1,5 +1,5 @@
 # Welcome to my GitHub!
-I am **Suveen Kumar Vundavalli**! You are currently looking at my portfolio source code!
+I am **Chiranjeevi Chandu**! You are currently looking at my portfolio source code!
 This repo is a personal portfolio website using dynamic routing and responsive design.
 ## Tech Stack
 |Role|Technologies  |
